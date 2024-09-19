@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+html{
+    font-family: sans-serif;
+    font-size: 500;
+}
+
+nav{
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background:#ad6b4a;
+    color:#ffffff; 
+}
+
+.titulo-nav{
+    font-size: 1rem;
+    text-transform: uppercase; 
+    
+}
+.logo-nav{
+    display: flex;
+    flex-direction:row;
+    gap: 0.4rem;
+}
+.logo-instagram{
+    width: 40px;
+    height: auto;
+}
+.logo-wpp{
+    width: 40px;
+    height: auto;
+}
+.logo-face{
+    width: 40px;
+    height: auto;
+}
+
+.secao-1{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    margin: auto;
+    background:#ad6b4a;
+    color:#ffffff; 
+}
+
+.teste{
+    margin: 0% 30% 0% 30%;
+}
+
+.hero-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.hero-imagem > figure > img{
+    width: 100%;
+    border-radius: 0.5;
+    max-width: 50%;
+
+}
+.texto-principal{
+    font-size: 20px;
+    text-align:left;
+    background-color: darkgreen;
+}
+
+
+.imagem-mulher-negra{
+text-align: right;
+}
+
+.teste{
+    justify-content: space-between;
+}
