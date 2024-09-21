@@ -26,7 +26,6 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
 }
 
 html {
@@ -590,3 +589,209 @@ footer {
     text-align: center;
 }
 
+/*======MEDIA QUERIES=====*/
+
+/*EXTRA SMALL (XS): SMARTPHONE(PORTRAIT)*/
+@media (min-width: 0px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+    html {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+    section {
+        padding: 6rem 1rem;
+    }
+    .sec-inicio {
+        background-position: center;
+    }
+    .btn-inicio {
+        position: relative;
+        right: 80px;
+    }
+    .sec-quadro {
+        background-size: 80%;
+        background-position: center;
+    }
+    .text {
+        height: 50%;
+        width: 70%;
+        position: relative;
+        right: 1px;
+        opacity: 0.7;
+        top: 80px;
+    }
+    .sec-beneficio > h1 {
+        position: relative;
+        bottom: 65px;
+    }
+    .benefic {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        bottom: 150px;
+        gap: 2rem;
+        left: 20px;
+    }
+    .numero {
+        width: 80%;
+        height: 18rem;
+        padding: 1rem;
+        position: relative;
+        bottom: 20px;
+    }
+    .numero > div > h3 {
+        display: none;
+    }
+    .numero > p {
+        position: relative;
+        top: 20px;
+        right: 6px;
+    }
+    .icons {
+        position: relative;
+        bottom: 250px;
+        right: 170px;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .sec-depoimentos > h3{
+        position: relative;
+        bottom: 55px;
+    }
+    .container-dep {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .depoimentos {
+        height: 200px;
+        position: relative;
+        bottom: 40px;
+    }
+    .star {
+        position: relative;
+        bottom: 50px;
+    }
+    .sec-vital {
+        height: 70vh;
+    }
+    .container-vital {
+        position: relative;
+        bottom: 100px;
+    }
+    .digital > p {
+        font-size: 1rem;
+    }
+    .mentora > h2 {
+        position: relative;
+        right: 15px;
+    }
+    .mentora {
+        position: relative;
+        right: 40px;
+        bottom: 120px;
+        
+    }
+    .btn2 {
+        position: relative;
+        right: 130px;
+        padding: 1rem;
+        width: 65%;
+        bottom: 10px;
+    }
+    .pagamentos > img {
+        width: 8%;
+        position: relative;
+        bottom: 30px;
+    }
+    .sec-oferta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        background-size: 320px;
+        background-position: left;
+        position: relative;
+        
+    }
+    .sec-oferta > h3 {
+        position: relative;
+        bottom: 70px;
+    }
+    .sec-oferta > h2 {
+        position: relative;
+        bottom: 75px;
+    }
+    .sobre-ebook {
+        position: relative;
+        left: 140px;
+        bottom: 80px;
+        width: 45%;
+        text-align: start;
+    }
+    .oferta {
+        position: relative;
+        left: 1px;
+        top: 150px;
+    }
+    .sec-especial {
+        height: 150%;
+    }
+    .destaque {
+        width: 200px;
+        font-size: 1.2rem;
+    }
+    .oferta-esp {
+        position: relative;
+        height: 270px;
+        width: 55%;
+    }
+    .oferta-esp > p {
+        font-size: 1.2rem;
+        right: 5px;
+    }
+    .oferta-esp > div > p {
+        font-size: 0.9rem;
+        text-align: start;
+    }
+    .b {
+        position: relative;
+        width: 80%;
+    }
+    .oferta-esp > h1 {
+        position: relative;
+        top: 120px;
+    }
+    .btn3 {
+        position: relative;
+        top: 60px;
+    }
+
+}
+
+/*SMAL (SM): SMARTPHONE (LANDSCAPE)*/
+@media (min-width: 576px) {
+    
+}
+
+/*MEDIUM (MD): TABLET*/
+@media (min-width: 768px){
+    
+}
+/*LARGE (1G): NOTEBOOK*/
+@media (min-width: 992px) {
+    
+}
+
+/*EXTRA LARGE (X1): DESKTOP*/
+@media (min-width: 1200px) {
+    
+}
+/*======MEDIA QUERIES=====*/
