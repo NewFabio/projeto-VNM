@@ -90,6 +90,7 @@ section {
     font-size: 3.7rem;
     font-weight: 700;
     padding-bottom: 1.7rem;
+    cursor: default;
 }
 
 .content-inicio > p {
@@ -99,6 +100,7 @@ section {
     padding-right: 10rem 10rem;
     text-align: start;
     width: 65%;
+    cursor: default;
 }
 
 .hero-imagem {
@@ -167,6 +169,7 @@ body > hr {
     margin: 2rem;
     position: relative;
     right: 200px;
+    cursor: default;
 }
 
 .text > h2 {
@@ -188,6 +191,7 @@ body > hr {
     align-items: center;
     text-align: center;
     height: 90vh;
+    cursor: default;
 }
 
 .sec-beneficio > h1 {
@@ -264,6 +268,7 @@ body > hr {
     background: var(--main-color);
     text-align: center;
     height: 120vh;
+    cursor: default;
 }
 
 .sec-depoimentos > h3 {
@@ -304,6 +309,7 @@ body > hr {
 .sec-vital {
     background: var(--penultimasec-color);
     height: 80vh;
+    cursor: default;
 }
 
 .container-vital {
@@ -351,6 +357,7 @@ body > hr {
 .sec-mentora {
     background: var(--branco-color);
     height: 80vh;
+    cursor: default;
 }
 
 .mentora {
@@ -426,6 +433,7 @@ body > hr {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 500px;
+    cursor: default;
 }
 
 .sec-oferta > h3 {
@@ -494,6 +502,7 @@ body > hr {
     flex-direction: column;
     align-items: center;
     align-content: space-between;
+    cursor: default;
 }
 
 .oferta-esp {
@@ -587,6 +596,7 @@ footer {
     color: var(--branco-color);
     font-size: 1.2rem;
     text-align: center;
+    cursor: default;
 }
 
 /*======MEDIA QUERIES=====*/
@@ -733,6 +743,7 @@ footer {
         position: relative;
         left: 140px;
         bottom: 80px;
+        top: 150px;
         width: 45%;
         text-align: start;
     }
@@ -778,16 +789,192 @@ footer {
 
 /*SMAL (SM): SMARTPHONE (LANDSCAPE)*/
 @media (min-width: 576px) {
-    
+    .content-inicio > h1 {
+        font-size: 3.2rem;
+    }
+    .content-inicio > p {
+        font-size: 1.5rem;
+    }
+    .btn-inicio {
+        padding: 1rem 2rem;
+        width: 40%;
+        text-align: center;
+    }
+    .sec-quadro {
+        background-size: 60%;
+    }
+    .text > p {
+        font-size: 1.3rem;
+    }
+    .numero {
+        height: 14rem;
+        top: 2rem;
+        margin-bottom: 3.2rem
+    }
+    .numero > div > h3 {
+        display: inline-block;
+        font-size: 3rem;
+        height: 60px;
+        width: 60px;
+        position: relative;
+        bottom: 50px;
+    }
+    .numero > p {
+        position: relative;
+        padding-bottom: 60px;
+        z-index: 1;
+        top: -30px;
+    }
+    .depoimentos {
+        border-radius: 30px;
+        height: 200px;
+    }
+    .depoimentos > p {
+        font-size: 1.2rem;
+    }
+    .star > img {
+        position: relative;
+        top: 30px;
+        width: 70%;
+    }
+    .digital > h4 {
+        font-size: 1.4rem;
+    }
+    .digital > p {
+        font-size: 1.2rem;
+    }
+    .sec-oferta {
+        background-size: 400px;
+    }
+    .sec-oferta > h3 {
+        font-size: 1.5rem;
+        top: 8px;
+    }
+    .sec-oferta > h2 {
+        font-size: 3.5rem;
+        top: 20px;
+    }
+    .sobre-ebook {
+        font-size: 1.5rem;
+        position: relative;
+        top: 90px;
+        left: 180px;
+    }
+    .oferta-esp {
+        height: 290px;
+    }
+    .oferta-esp > p {
+        font-size: 1.5rem;
+    }
+    .oferta-esp > div > p {
+        font-size: 1rem;
+    }
 }
 
 /*MEDIUM (MD): TABLET*/
 @media (min-width: 768px){
-    
+    .content-inicio > h1 {
+        font-size: 3.5rem;
+    }
+    .sec-quadro {
+        background-size: 40%;
+        background-position: right;
+    }
+    .text {
+        position: relative;
+        right: 150px;
+        width: 60%;
+        height: 350px;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    .text > h2 {
+        font-size: 1.8rem
+    }
+    .text > p {
+        font-size: 1.5rem;
+    }
+    .numero > div > h3 {
+        font-size: 3rem;
+        height: 80px;
+        width: 80px;
+    }
+    .mentora > h2 {
+        text-align: center;
+        position: relative;
+        left: 30px;
+    }
+    .mentoria {
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        position: relative;
+        left: 35px;
+    }
+    .btn2 {
+        position: relative;
+        left: -70px;
+        top: 20px;
+    }
+    .pagamentos > img {
+        width: 7%;
+        position: relative;
+        top: 60px;
+    }
+    .sec-oferta {
+        background-size: 400px;
+    }
+    .sec-oferta > h3 {
+        font-size: 1.5rem;
+        top: -10px;
+    }
+    .sec-oferta > h2 {
+        font-size: 3.5rem;
+        top: -20px;
+    }
+    .oferta {
+        position: relative;
+        left: 290px;
+    }
+    .sobre-ebook {
+        font-size: 1.5rem;
+        position: relative;
+        top: 90px;
+        left: 180px;
+    }
+
 }
 /*LARGE (1G): NOTEBOOK*/
 @media (min-width: 992px) {
-    
+    .sec-inicio {
+        background-position: right;
+    }
+    .content-inicio > h1 {
+        font-size: 5rem;
+        cursor: default;
+
+    }
+    .content-inicio > p {
+        font-size: 2rem;
+        cursor: default;
+    }
+    .btn-inicio > a {
+        font-size: 2rem;
+    }
+    .sec-quadro {
+        background-size: 35%;
+    }
+    .benefic {
+        position: relative;
+        left: 50px;
+    }
+    .icons {
+        left: -140px;
+    }
+    .btn3 {
+        font-size: 2rem;
+    }
 }
 
 /*EXTRA LARGE (X1): DESKTOP*/
