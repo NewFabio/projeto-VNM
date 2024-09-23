@@ -28,7 +28,7 @@
     outline: none;
 }
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
 }
 html {
@@ -248,7 +248,7 @@ body > hr {
     align-items: center;
     justify-content: space-evenly;
     color: var(--branco-color);
-    border: 2px solid var(--branco-color);
+    border: 3px solid var(--branco-color);
     border-radius: 50px;
     margin-top: 100px;
     height: 60px;
@@ -347,6 +347,12 @@ body > hr {
 .sec-mentora {
     background: var(--branco-color);
     cursor: default;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
 }
 
 .mentora {
@@ -356,36 +362,52 @@ body > hr {
     justify-content: center;
     align-items: center;
     align-content: space-evenly;
-    margin: 30px;
-    padding: 30px;
-    gap: 30px;
-}
+    gap: 10px;
+} 
 
-.mentora > h2 {
-    font-size: 2rem;
+.sec-mentora > h2 {
+    font-size: 3rem;
     font-weight: 500;
 }
 
-.mentora > h2 > span {
+.sec-mentora > h2 > span {
     color: var(--benefic-color);
-    font-size: 3rem;
+    font-size: 3.8rem;
     font-weight: 800;
     font-family: 'Dancing script';
 }
 
 .mentoria {
+    /* border: 5px solid var(--history-color);
+    border-radius: 50px; */
+    margin-right: 800px;
+    margin-top: -220px;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: 270px;
+    left: 20px;
+}
+
+.containe-p {
     border: 5px solid var(--history-color);
     border-radius: 50px;
+    width: 1050px;
+    height: 280px;
     padding: 2rem;
-    text-align: start;
 }
 
-.mentoria > h2 {
-    text-align: center;
-}
-
-.mentoria > p {
-    font-size: 1.2rem;
+.mentoria > div > p {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 300px;
+    width: 700px;
+    text-align: start;   
 }
 
 .mentoria > p > span {
@@ -409,6 +431,10 @@ body > hr {
     border-radius: 20px;
     padding: 1rem;
     width: 60%;
+    cursor: pointer;
+}
+.btn2:hover {
+    background: var(--main-color);
 }
 .btn2 > a {
     text-decoration: none;
@@ -440,19 +466,20 @@ body > hr {
     align-content: space-evenly;
     text-align: center;
 }
-.container-ofer > h3 {
+.sec-oferta > h3 {
     text-align: center;
     padding-top: 2rem;
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 400;
     color: var(--branco-color);
 }
 
-.container-ofer> h2 {
+.sec-oferta > h2 {
     text-align: center;
     font-size: 3rem;
     font-family: 'Dancing script';
     font-weight: 900;
+    color: var(--branco-color);
 }
 
 .sobre-ebook {
@@ -567,7 +594,7 @@ body > hr {
 
 .btn3 {
     color: var(--branco-color);
-    background: var(--main-color);
+    background: var(--benefic-color);
     border: 2px solid var(--branco-color);
     padding: 1.3rem;
     border-radius: 30px;
@@ -578,6 +605,9 @@ body > hr {
     font-size: 1.3rem;
     cursor: pointer;
     z-index: 1;   
+}
+.btn3:hover {
+    background: var(--main-color);
 }
 .btn3 > a {
     color: var(--branco-color);
@@ -665,39 +695,39 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        align-content: space-evenly;
-        
+        align-content: space-evenly; 
     }
     .benefic {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         position: relative;
-        
+        row-gap: 60px;
     }
     .numero {
         width: 150px;
-        height: 20rem;
+        height: 13rem;
         padding: 1rem;
         position: relative;
         bottom: 100px;
+        border-radius: 20px;
     }
     .numero > div > h3 {
         width: 50%;
-        height: 50%;
-        font-size: 2.5rem;
-        top: 1px;
+        height: 60%;
+        font-size: 2.7rem;
+        bottom: 40px;
     }
-    .numero > p {
-        position: relative;
-        top: 20px;
-        right: 12px;
+    .numero > p {      
         width: 120px;
         font-size: 1rem;
         margin: 2rem;
+        position: relative;
+        bottom: 50px;
+        right: 20px;
     }
     .icons {
         position: relative;
-        bottom: 170px;
+        bottom: 150px;
         right: 95px;
         width: 350px;  
     }
@@ -764,7 +794,8 @@ footer {
         justify-content: center;
         align-items: center;
         align-content: space-evenly;
-        text-align: center; 
+        text-align: center;
+        gap: 50px; 
     }
     .mentora { 
         display: flex;
@@ -774,15 +805,35 @@ footer {
         align-content: space-evenly;
         text-align: center;     
     }
-    .mentoria {
-        width: 250px;
+    .mentoria  {
+        margin-right: 0px;
+        margin-top: -150px;
     }
-    .btn2 {        
+    .containe-p {
         width: 300px;
-        
+        padding: 1rem;
+    }
+    .mentoria > div > p {
+        font-size: 1rem;
+        width: 260px;
+        margin-left: 5px;
+    }
+    .foto {
+        width: 90px;
+        height: 90px;
+        top: 15px;
+        left: 120px;  
+    }
+    .btn2 { 
+        display: flex;       
+        width: 300px;
+        height: 50px; 
+    }
+    .btn2 > a {
+        font-size: 1.2rem;
     }
     .pagamentos > img {
-        width: 8%;
+        width: 5%;
     }
     /* setima section */
     .sec-oferta {
@@ -791,7 +842,7 @@ footer {
         align-items: center;
         align-content: space-between;
         justify-content: flex-start;
-        background-size: 420px;
+        background-size: 400px;
         position: relative;
         background-position: bottom;
         height: 200vh;
@@ -890,23 +941,34 @@ footer {
         margin: 0; 
     }
     /* terceira section */
+    .benefic {
+        row-gap: 40px;
+        column-gap: 50px;
+        top: 5px;
+    }
     .numero {
         width: 200px;
         padding: 1rem;
-        height: 260px;
+        height: 200px;
     }
     .numero > div > h3 {
         display: inline-block;
         font-size: 3rem;
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         position: relative;
-        top: -10px;
+        top: -50px;
+        z-index: 1;
     }
     .numero > p {
         font-size: 1.2rem;
-        z-index: 1;
-        margin-top: -20px;
+        margin-top: 2px;
+    }
+    .icons {
+        width: 100%;
+    }
+    .icons > img {
+        width: 20px;
     }
     /* quarta section */
     .depoimentos {
@@ -920,9 +982,36 @@ footer {
     .digital {
         row-gap: 1px;
     }
+    /* sexta section */
+    .mentoria {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        align-content: space-evenly;
+        text-align: center;
+    }
+    .containe-p {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 60px;
+        width: 550px;
+        height: 200px;
+    }
+    .mentoria > div > p {
+        width: 500px;
+        margin-left: 20px;
+        padding: 0;
+    }
+    .foto {
+        width: 100px;
+        height: 100px;
+        top: 50px;
+        left: 20px;        
+    }
     /* setima section */
     .sec-oferta {
-        background-size: 350px;
+        background-size: 320px;
     }
     .sec-oferta > h3 {
         font-size: 1.5rem;   
@@ -956,6 +1045,18 @@ footer {
         font-size: 3.5rem;
     }
     /* segunda section */
+    .text {
+        background: var(--textsec2-color);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        align-content: space-evenly;
+        justify-content: left;
+        height: 450px;
+        padding: 3rem;
+        margin-right: 120px;
+    }
     .text > h2 {
         font-size: 1.4rem;
         margin: 0;
@@ -983,15 +1084,27 @@ footer {
         font-size: 1rem;
     }
     /* sexta section */
-    .mentora > h2 {
-        font-size: 3rem;
-        text-align: center;
-    }
     .mentoria {
+        display: flex;
         align-items: center;
         align-content: center;
         align-self: center;
         text-align: center;       
+    }
+    .containe-p {
+        width: 700px;
+        margin-top: -25px;
+    }
+    .mentoria > div > p {
+        font-size: 1.2rem;
+        width: 500px;
+        margin-left: 150px;
+    }
+    .foto {
+        width: 150px;
+        height: 150px;
+        top: 150px;
+        left: -260px;
     }
     .pagamentos > img {
         width: 8%;
@@ -1048,24 +1161,29 @@ footer {
     }
     /* segunda section */
     .sec-quadro {
-        background-size: 45%;
+        background-size: 40%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: space-evenly;
+        text-align: center;
     }
     .text {
         background: var(--textsec2-color);
-        width: 500px;
-        height: 550px;
-        left: -60px;
-        top: 60px;
+        width: 400px;
+        height: 500px;
+        margin-bottom: 300px;
+        
     }
     .text > h2 {
-        font-size: 2rem;
-        width: 500px;
-        padding: 1rem;
+        font-size: 1.5rem;
+        width: 350px;
     }
     .text > p {
-        font-size: 1.8rem;
-        width: 500px;
-        padding: 1rem;
+        font-size: 1.5rem;
+        width: 350px;
     }
     /* terceira section */
     .sec-beneficio {
@@ -1086,16 +1204,17 @@ footer {
         justify-content: center;
     }
     .numero {
-        border-radius: 20px;
-        margin-top: 100px;
+        border-radius: 30px;
+        margin-top: 90px;
+        height: 250px;
     }
     .numero > div > h3 {
         display: inline-block;
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         position: relative;
-        top: -100px;
-        font-size: 7rem;
+        top: -70px;
+        font-size: 5rem;
         text-align: center;
     }
     .numero > p {
@@ -1104,9 +1223,12 @@ footer {
         font-size: 1.4rem;
     }
     .icons {
-        margin-top: 180px;
-        width: 500px;
-        
+        margin-top: 150px;
+        width: 100%; 
+    }
+    .icons > img {
+        width: 50px;
+        height: 40px;
     }
     /* quarta section */
     .sec-depoimentos > h3 {
@@ -1149,12 +1271,37 @@ footer {
         width: 200px;
     }
     /* sexta section */
-    .mentora > h2 {
-        font-size: 4rem
+    .mentora {
+        display: flex;
+        text-align: center;
+    }
+    .containe-p {
+        width: 960px;
+        height: 250px;
+        padding: 2rem;
+        margin-top: -70px;
+    }
+    .mentoria > div > p {
+        font-size: 1.5rem;
+        width: 700px;
+        margin-left: 200px;
+    }
+    .foto {
+        width: 200px;
+        height: 200px;
+        left: -370px;
+        top: 150px;
     }
     .btn2 {
-        width: 500px;
-        cursor: pointer;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        border-radius: 10px;     
+    }
+    .btn2 > a {
+        font-size: 1.6rem;
     }
     /* ultima section */
     .btn3 {
@@ -1165,6 +1312,101 @@ footer {
 
 /*EXTRA LARGE (X1): DESKTOP*/
 @media (min-width: 1200px) {
-    
+    /* primeira section */
+    .content-inicio {
+        margin-bottom: 179px;
+    }
+    .content-inicio h1 {
+        font-size: 3.5rem;
+        width: 600px;
+    }
+    .content-inicio > p {
+        font-size: 1.6rem;
+        width: 470px;
+    }
+    /* segunda section */
+    .sec-quadro {
+        background-size: 30%;
+    }
+    /* terceira section */
+    .benefic {
+        column-gap: 10px;
+    }
+    .numero {
+        width: 250px;
+    }
+    .numero > p {
+        font-size: 1.9rem;
+        width: 100%;
+    }
+    .icons {
+        width: 100%;
+        padding: 1.2rem 0 1.2rem 0;
+        margin-top: 150px;
+    }
+    .icons > img {
+        width: 40px;
+        height: 200px;
+    }
+    .icons > p {
+        font-size: 1.5rem;
+    }
+    /* quarta section */
+    .container-dep {
+        width: 100%;
+    }
+    .depoimentos {
+        background-size: 30%;
+        width: 100%;
+    }
+    .depoimentos > p {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+    /* quinta section */
+    .sec-vital {
+        height: 30%;
+    }
+    /* sexta section */
+    .pagamentos {
+        width: 40%;
+    }
+    /* setima section */
+    .sec-oferta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-content: space-evenly;
+        background-position: right calc(20%);
+        background-size: 40%;
+    }
+    .container-ofer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: center;
+        align-content: space-evenly;
+        justify-content: left;
+        margin-top: 90px;
+    }
+    .sobre-ebook {
+        display: flex;
+        align-items: start;
+        text-align: left;
+        align-content: space-evenly;
+        margin: 0;
+        
+    }
+    .sobre-ebook > p {
+        font-size: 1.9rem;
+    }
+    .oferta {
+        display: flex;
+        font-size: 2.3rem;
+        width: 90%;
+        margin: 150px 0 0 0;
+    }
+
 }
 /*======MEDIA QUERIES=====*/
